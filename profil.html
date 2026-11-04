@@ -12,18 +12,33 @@
   <link href="style.css" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
-<body class="bg-surface font-body-md text-on-surface antialiased">
-  <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_2px_12px_rgba(53,16,71,0.06)] border-b border-outline-variant/30"><div class="site-header-inner h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
-    <a class="flex items-center gap-space-sm group text-left" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda"><span class="p-1 bg-surface-container-lowest rounded shadow-sm flex items-center justify-center shrink-0"><img alt="" class="w-10 h-10 object-contain shrink-0" src="assets/logo.png"></span><span class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary-container tracking-wider leading-none group-hover:text-secondary transition-colors">AKADEMI PARIWISATA MAJAPAHIT</span><span class="font-label-md text-label-md tracking-widest text-on-surface-variant font-medium mt-0.5 uppercase">Pendidikan Pariwisata &amp; Hospitality</span></span></a>
+<body class="profile-page bg-surface font-body-md text-on-surface antialiased">
+  <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_2px_12px_rgba(53,16,71,0.06)] border-b border-outline-variant/30">
+    <div class="site-header-inner h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
+    <a class="profile-brand flex items-center gap-space-sm group text-left" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda">
+      <span class="p-1 bg-surface-container-lowest rounded shadow-sm flex items-center justify-center shrink-0"><img alt="" class="w-10 h-10 object-contain shrink-0" src="assets/logo.png"></span>
+      <span class="flex flex-col"><span class="profile-brand-name font-headline-sm text-headline-sm font-bold text-primary-container tracking-wider leading-none group-hover:text-secondary transition-colors">AKADEMI PARIWISATA MAJAPAHIT</span><span class="profile-brand-tagline font-label-md text-label-md tracking-widest text-on-surface-variant font-medium mt-0.5 uppercase">Pendidikan Pariwisata &amp; Hospitality</span></span>
+    </a>
     <nav id="primary-navigation" class="primary-navigation items-center gap-space-md" aria-label="Navigasi utama">
-      <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="index.html">Beranda</a><a aria-current="page" class="transition-colors py-2 text-secondary font-bold" href="profil.html">Profil</a>
-      <div class="relative group nav-dropdown py-2"><button type="button" class="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-controls="program-menu">Program Studi<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-primary transition-transform duration-200" aria-hidden="true">expand_more</span></button><div id="program-menu" class="nav-dropdown-panel absolute left-0 top-full flex-col bg-surface-container-lowest py-space-sm px-space-xs shadow-[0_12px_32px_-4px_rgba(53,16,71,0.12)] rounded-lg min-w-[250px] border border-outline-variant/20 z-50" aria-hidden="true"><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="program-studi.html">Semua Program Studi</a><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="prodi-usaha-perjalanan-wisata.html">Usaha Perjalanan Wisata</a><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="prodi-perhotelan.html">Perhotelan</a></div></div>
-      <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="berita.html">Berita</a><a class="desktop-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary transition-colors" href="pendaftaran.html">Pendaftaran</a><a class="mobile-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold" href="pendaftaran.html">Pendaftaran</a>
+      <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="index.html">Beranda</a>
+      <a aria-current="page" class="transition-colors py-2 text-secondary font-bold" href="profil.html">Profil</a>
+      <div class="relative group nav-dropdown py-2">
+        <button type="button" class="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-controls="program-menu">Program Studi<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-primary transition-transform duration-200" aria-hidden="true">expand_more</span></button>
+        <div id="program-menu" class="nav-dropdown-panel absolute left-0 top-full flex-col bg-surface-container-lowest py-space-sm px-space-xs shadow-[0_12px_32px_-4px_rgba(53,16,71,0.12)] rounded-lg min-w-[250px] border border-outline-variant/20 z-50" aria-hidden="true">
+          <a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="program-studi.html">Semua Program Studi</a>
+          <a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="prodi-usaha-perjalanan-wisata.html">Usaha Perjalanan Wisata</a>
+          <a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="prodi-perhotelan.html">Perhotelan</a>
+        </div>
+      </div>
+      <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="berita.html">Berita</a>
+      <a class="desktop-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary transition-colors" href="pendaftaran.html">Pendaftaran</a>
+      <a class="mobile-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold" href="pendaftaran.html">Pendaftaran</a>
     </nav>
     <button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
-  </div></header>
+  </div>
+  </header>
   <main class="page-main">
-    <section class="bg-surface-bright py-space-xl lg:py-24">
+    <section class="profile-intro bg-surface-bright py-space-xl lg:py-24" id="top">
       <div class="max-w-7xl mx-auto px-gutter">
         <nav class="font-label-md text-label-md text-on-surface-variant mb-space-lg" aria-label="Breadcrumb">
           <ol class="flex flex-wrap items-center gap-2">
@@ -32,7 +47,7 @@
             <li class="font-semibold text-primary-container" aria-current="page">Profil</li>
           </ol>
         </nav>
-        <div class="max-w-3xl">
+        <div class="profile-intro-copy max-w-3xl">
           <span class="font-label-md text-label-md font-bold text-secondary tracking-widest uppercase">AKADEMI PARIWISATA MAJAPAHIT</span>
           <h1 class="font-headline-lg text-headline-lg lg:text-[48px] text-primary-container leading-tight mt-2">Profil Akademi Pariwisata Majapahit</h1>
           <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mt-space-md">Mengenal Akademi Pariwisata Majapahit, visi dan misi institusi, serta dua program studi yang diselenggarakan.</p>
@@ -40,7 +55,7 @@
       </div>
     </section>
 
-    <section class="py-space-xl lg:py-24">
+    <section class="profile-about py-space-xl lg:py-24">
       <div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
         <div class="lg:col-span-7">
           <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-surface-container text-secondary font-label-md text-label-md font-semibold tracking-widest uppercase">Tentang Akademi</span>
@@ -62,36 +77,36 @@
     </section>
 
     <section class="bg-primary-container text-on-primary py-space-xl lg:py-24">
-      <div class="max-w-5xl mx-auto px-gutter text-center">
+      <div class="profile-vision-inner max-w-5xl mx-auto px-gutter text-center">
         <span class="font-label-md text-label-md font-bold tracking-widest uppercase text-secondary-fixed">Visi Institusi</span>
         <h2 class="font-headline-lg text-headline-lg lg:text-[40px] leading-tight mt-space-md">Menjadi lembaga pendidikan pariwisata terdepan dalam menciptakan sumber daya manusia pariwisata yang profesional, berbudaya, dan berskala global.</h2>
       </div>
     </section>
 
-    <section class="py-space-xl lg:py-24">
+    <section class="profile-mission py-space-xl lg:py-24">
       <div class="max-w-7xl mx-auto px-gutter">
         <div class="max-w-3xl mb-space-xl">
           <span class="font-label-md text-label-md font-bold text-secondary tracking-widest uppercase">ARAH PENGEMBANGAN INSTITUSI</span>
           <h2 class="font-headline-lg text-headline-lg lg:text-[40px] text-primary-container leading-tight mt-2">Misi Akademi</h2>
         </div>
-        <ol class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
-          <li class="p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
+        <ol class="profile-mission-grid grid grid-cols-1 md:grid-cols-2 gap-space-md">
+          <li class="profile-mission-card p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
             <span class="font-headline-sm text-headline-sm font-bold text-secondary shrink-0">01</span>
             <span class="font-body-md text-body-md text-on-surface-variant leading-relaxed">a. Mengembangkan kualitas dan kuantitas kurikulum pendidikan dan tenaga pengajar.</span>
           </li>
-          <li class="p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
+          <li class="profile-mission-card p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
             <span class="font-headline-sm text-headline-sm font-bold text-secondary shrink-0">02</span>
             <span class="font-body-md text-body-md text-on-surface-variant leading-relaxed">b. Mengembangkan dan meningkatkan mutu sarana pendidikan.</span>
           </li>
-          <li class="p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
+          <li class="profile-mission-card p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
             <span class="font-headline-sm text-headline-sm font-bold text-secondary shrink-0">03</span>
             <span class="font-body-md text-body-md text-on-surface-variant leading-relaxed">c. Memacu tingkat kreativitas dan inovasi mahasiswa dalam pengembangan kemampuan dan karir.</span>
           </li>
-          <li class="p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
+          <li class="profile-mission-card p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md">
             <span class="font-headline-sm text-headline-sm font-bold text-secondary shrink-0">04</span>
             <span class="font-body-md text-body-md text-on-surface-variant leading-relaxed">d. Mendekatkan dan mensinergikan civitas akademika dengan dunia usaha pariwisata.</span>
           </li>
-          <li class="p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md md:col-span-2">
+          <li class="profile-mission-card profile-mission-card--last p-space-lg rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex gap-space-md md:col-span-2">
             <span class="font-headline-sm text-headline-sm font-bold text-secondary shrink-0">05</span>
             <span class="font-body-md text-body-md text-on-surface-variant leading-relaxed">e. Mewujudkan pengembangan ilmu pengetahuan untuk pengabdian masyarakat.</span>
           </li>
@@ -99,7 +114,7 @@
       </div>
     </section>
 
-    <section class="bg-surface-container-low py-space-xl lg:py-24">
+    <section class="profile-programs bg-surface-container-low py-space-xl lg:py-24">
       <div class="max-w-7xl mx-auto px-gutter">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-space-md mb-space-xl">
           <div>
@@ -109,14 +124,14 @@
           </div>
           <a class="inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary" href="program-studi.html">Lihat Semua Program Studi <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
-          <article class="p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-card flex flex-col items-start">
+        <div class="profile-program-grid grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+          <article class="profile-program-card p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-card flex flex-col items-start">
             <span class="material-symbols-outlined text-[32px] text-secondary" aria-hidden="true">travel_explore</span>
             <h3 class="font-headline-sm text-headline-sm font-bold text-primary-container mt-space-md">Usaha Perjalanan Wisata</h3>
             <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">Program studi resmi Akademi Pariwisata Majapahit.</p>
             <a class="mt-space-lg inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary" href="prodi-usaha-perjalanan-wisata.html">Lihat Selengkapnya <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
           </article>
-          <article class="p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-card flex flex-col items-start">
+          <article class="profile-program-card p-space-lg lg:p-space-xl rounded-xl bg-surface-container-lowest shadow-card flex flex-col items-start">
             <span class="material-symbols-outlined text-[32px] text-secondary" aria-hidden="true">hotel</span>
             <h3 class="font-headline-sm text-headline-sm font-bold text-primary-container mt-space-md">Perhotelan</h3>
             <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">Program studi resmi Akademi Pariwisata Majapahit.</p>
@@ -126,7 +141,7 @@
       </div>
     </section>
 
-    <section class="bg-primary-container text-on-primary py-space-xl lg:py-20">
+    <section class="profile-cta bg-primary-container text-on-primary py-space-xl lg:py-20">
       <div class="max-w-5xl mx-auto px-gutter text-center">
         <h2 class="font-headline-lg text-headline-lg lg:text-[40px] leading-tight">Kenali Program Studi Akademi Pariwisata Majapahit</h2>
         <p class="font-body-md text-body-md text-surface-variant mt-space-sm">Informasi program studi dan pendaftaran tersedia pada halaman masing-masing.</p>
@@ -137,7 +152,7 @@
       </div>
     </section>
   </main>
-  <footer class="w-full bg-primary-container text-surface-container-lowest border-t border-secondary/30 pt-space-xl pb-space-lg">
+  <footer class="profile-footer w-full bg-primary-container text-surface-container-lowest border-t border-secondary/30 pt-space-xl pb-space-lg">
     <div class="max-w-7xl mx-auto px-gutter">
       <div class="site-footer-grid">
         <div><a class="flex items-center gap-space-sm mb-space-sm" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda"><span class="p-1.5 bg-surface-container-lowest rounded shadow shrink-0"><img alt="" class="w-10 h-10 object-contain" src="assets/logo.png"></span><span class="font-headline-sm text-headline-sm font-bold text-surface tracking-wide">AKADEMI PARIWISATA MAJAPAHIT</span></a><p class="font-body-sm text-body-sm text-surface-variant/90 leading-relaxed">Akademi Pariwisata Majapahit menyelenggarakan dua program studi: Usaha Perjalanan Wisata dan Perhotelan.</p></div>
@@ -146,6 +161,10 @@
         <address class="site-footer-contact"><h2 class="font-label-lg text-label-lg font-bold text-secondary-fixed uppercase tracking-wider mb-2">Kontak</h2><a class="font-body-sm text-body-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.%20Raya%20Jemursari%20244%2C%20Surabaya" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">location_on</span><span>Jl. Raya Jemursari 244, Surabaya</span></a><a class="font-body-sm text-body-sm" href="tel:+62318433225"><span class="material-symbols-outlined" aria-hidden="true">call</span><span>(031) 8433225</span></a><a class="font-body-sm text-body-sm" href="https://wa.me/6281232539310" target="_blank" rel="noopener noreferrer"><img class="contact-icon contact-icon--whatsapp" src="assets/whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp Marketing 1<br>+62 812-3253-9310</span></a><a class="font-body-sm text-body-sm" href="https://wa.me/6281330350822" target="_blank" rel="noopener noreferrer"><img class="contact-icon contact-icon--whatsapp" src="assets/whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp Marketing 2<br>+62 813-3035-0822</span></a><a class="font-body-sm text-body-sm" href="mailto:baa.akparmajapahit@gmail.com"><span class="material-symbols-outlined" aria-hidden="true">mail</span><span>baa.akparmajapahit@gmail.com</span></a></address>
       </div>
       <p class="pt-space-md text-surface-variant/70 font-body-sm text-body-sm">&copy; <span data-current-year>2026</span> Akademi Pariwisata Majapahit.</p>
+      <a class="profile-back-to-top" href="#top" aria-label="Kembali ke atas">
+        <span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span>
+        <span>Kembali ke atas</span>
+      </a>
     </div>
   </footer>
 </body>

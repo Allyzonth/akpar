@@ -9,14 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet"><script src="script.js" defer></script>
 </head>
-<body class="bg-surface font-body-md text-on-surface antialiased">
+<body class="news-page bg-surface font-body-md text-on-surface antialiased">
   <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_2px_12px_rgba(53,16,71,0.06)] border-b border-outline-variant/30"><div class="site-header-inner h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
     <a class="flex items-center gap-space-sm group text-left" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda"><span class="p-1 bg-surface-container-lowest rounded shadow-sm"><img alt="" class="w-10 h-10 object-contain" src="assets/logo.png"></span><span class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary-container tracking-wider leading-none">AKADEMI PARIWISATA MAJAPAHIT</span><span class="font-label-md text-label-md tracking-widest text-on-surface-variant uppercase">Pendidikan Pariwisata &amp; Hospitality</span></span></a>
     <nav id="primary-navigation" class="primary-navigation items-center gap-space-md" aria-label="Navigasi utama"><a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="index.html">Beranda</a><a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="profil.html">Profil</a><div class="relative group nav-dropdown py-2"><button type="button" class="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-controls="program-menu">Program Studi<span class="material-symbols-outlined text-[18px]" aria-hidden="true">expand_more</span></button><div id="program-menu" class="nav-dropdown-panel absolute left-0 top-full flex-col bg-surface-container-lowest py-space-sm px-space-xs shadow-[0_12px_32px_-4px_rgba(53,16,71,0.12)] rounded-lg min-w-[250px] border border-outline-variant/20 z-50" aria-hidden="true"><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low rounded font-label-md" href="program-studi.html">Semua Program Studi</a><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low rounded font-label-md" href="prodi-usaha-perjalanan-wisata.html">Usaha Perjalanan Wisata</a><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low rounded font-label-md" href="prodi-perhotelan.html">Perhotelan</a></div></div><a aria-current="page" class="transition-colors py-2 text-secondary font-bold" href="berita.html">Berita</a><a class="desktop-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md font-bold" href="pendaftaran.html">Pendaftaran</a><a class="mobile-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md font-bold" href="pendaftaran.html">Pendaftaran</a></nav>
     <button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
   </div></header>
   <main class="page-main">
-    <section class="bg-surface-bright py-space-xl lg:py-24">
+    <section class="news-intro bg-surface-bright py-space-xl lg:py-24">
       <div class="max-w-7xl mx-auto px-gutter">
         <nav class="font-label-md text-label-md text-on-surface-variant mb-space-lg" aria-label="Breadcrumb">
           <ol class="flex flex-wrap items-center gap-2">
@@ -32,14 +32,19 @@
         </div>
       </div>
     </section>
-    <section class="py-space-xl lg:py-24">
+    <section class="news-content py-space-xl lg:py-24">
       <div class="max-w-4xl mx-auto px-gutter">
-        <div class="p-space-xl lg:p-12 rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 text-center">
-          <span class="w-16 h-16 mx-auto rounded-full bg-secondary-container/20 text-primary-container flex items-center justify-center">
+        <div class="news-empty-state p-space-xl lg:p-12 rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 text-center" aria-labelledby="news-empty-title">
+          <span class="news-empty-icon w-16 h-16 mx-auto rounded-full bg-secondary-container/20 text-primary-container flex items-center justify-center">
             <span class="material-symbols-outlined text-[32px]" aria-hidden="true">article</span>
           </span>
-          <h2 class="font-headline-sm text-headline-sm lg:text-[28px] font-bold text-primary-container mt-space-md">Belum Ada Berita atau Informasi</h2>
+          <span class="news-empty-label font-label-md text-label-md font-bold text-secondary tracking-widest uppercase">Pembaruan Kampus</span>
+          <h2 class="font-headline-sm text-headline-sm lg:text-[28px] font-bold text-primary-container mt-space-md" id="news-empty-title">Belum Ada Berita atau Informasi</h2>
           <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">Informasi dan berita terbaru dari Akademi Pariwisata Majapahit akan ditampilkan di halaman ini.</p>
+          <div class="news-actions" aria-label="Jelajahi informasi Akademi Pariwisata Majapahit">
+            <a class="news-action-link news-action-link--primary" href="program-studi.html">Lihat Program Studi<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+            <a class="news-action-link news-action-link--secondary" href="pendaftaran.html">Informasi Pendaftaran<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          </div>
         </div>
       </div>
     </section>

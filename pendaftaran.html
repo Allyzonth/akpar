@@ -8,83 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet"><script src="script.js" defer></script>
-  <style>
-    .registration-form {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.25rem;
-    }
-
-    .registration-field {
-      min-width: 0;
-    }
-
-    .registration-field--full {
-      grid-column: 1 / -1;
-    }
-
-    .registration-control {
-      display: block;
-      width: 100%;
-      min-height: 3rem;
-      margin-top: 0.5rem;
-      padding: 0.75rem 1rem;
-      border: 1px solid #cfc3ce;
-      border-radius: 0.5rem;
-      background: #fffdf8;
-      color: #27232b;
-      font: inherit;
-    }
-
-    .registration-control::placeholder {
-      color: #77717c;
-      opacity: 1;
-    }
-
-    .registration-control:focus-visible {
-      outline: 3px solid var(--color-secondary);
-      outline-offset: 2px;
-    }
-
-    .registration-control[aria-invalid="true"] {
-      border-color: var(--color-tertiary);
-    }
-
-    textarea.registration-control {
-      min-height: 8rem;
-      resize: vertical;
-    }
-
-    .registration-error {
-      min-height: 1.25rem;
-      margin-top: 0.25rem;
-      color: var(--color-tertiary);
-      font-size: 0.875rem;
-    }
-
-    .registration-status {
-      min-height: 1.5rem;
-    }
-
-    @media (max-width: 639px) {
-      .registration-form {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .registration-field--full {
-        grid-column: auto;
-      }
-    }
-  </style>
 </head>
-<body class="bg-surface font-body-md text-on-surface antialiased">
+<body class="admission-page bg-surface font-body-md text-on-surface antialiased">
   <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_2px_12px_rgba(53,16,71,0.06)] border-b border-outline-variant/30"><div class="site-header-inner h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
     <a class="flex items-center gap-space-sm group text-left" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda"><span class="p-1 bg-surface-container-lowest rounded shadow-sm"><img alt="" class="w-10 h-10 object-contain" src="assets/logo.png"></span><span class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary-container tracking-wider leading-none">AKADEMI PARIWISATA MAJAPAHIT</span><span class="font-label-md text-label-md tracking-widest text-on-surface-variant uppercase">Pendidikan Pariwisata &amp; Hospitality</span></span></a>
     <nav id="primary-navigation" class="primary-navigation items-center gap-space-md" aria-label="Navigasi utama"><a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="index.html">Beranda</a><a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="profil.html">Profil</a><div class="relative group nav-dropdown py-2"><button type="button" class="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-controls="program-menu">Program Studi<span class="material-symbols-outlined text-[18px]" aria-hidden="true">expand_more</span></button><div id="program-menu" class="nav-dropdown-panel absolute left-0 top-full flex-col bg-surface-container-lowest py-space-sm px-space-xs shadow-[0_12px_32px_-4px_rgba(53,16,71,0.12)] rounded-lg min-w-[250px] border border-outline-variant/20 z-50" aria-hidden="true"><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low rounded font-label-md" href="program-studi.html">Semua Program Studi</a><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low rounded font-label-md" href="prodi-usaha-perjalanan-wisata.html">Usaha Perjalanan Wisata</a><a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low rounded font-label-md" href="prodi-perhotelan.html">Perhotelan</a></div></div><a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="berita.html">Berita</a><a aria-current="page" class="desktop-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md font-bold" href="pendaftaran.html">Pendaftaran</a><a class="mobile-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md font-bold" href="pendaftaran.html">Pendaftaran</a></nav>
     <button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
   </div></header>
   <main class="page-main">
-    <section class="bg-surface-bright py-space-xl lg:py-24">
+    <section class="admission-intro bg-surface-bright py-space-xl lg:py-24">
       <div class="max-w-7xl mx-auto px-gutter">
         <nav class="font-label-md text-label-md text-on-surface-variant mb-space-lg" aria-label="Breadcrumb">
           <ol class="flex flex-wrap items-center gap-2">
@@ -101,8 +33,9 @@
       </div>
     </section>
 
-    <section class="py-space-xl lg:py-24">
-      <div class="max-w-5xl mx-auto px-gutter">
+    <section class="admission-content py-space-xl lg:py-24">
+      <div class="admission-layout max-w-7xl mx-auto px-gutter">
+        <div class="admission-form-column">
         <div class="max-w-3xl mb-space-lg">
           <h2 class="font-headline-lg text-headline-lg lg:text-[36px] text-primary-container leading-tight">Formulir Minat Pendaftaran</h2>
           <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">Silakan lengkapi formulir berikut untuk menyampaikan minat pendaftaran Anda di Akademi Pariwisata Majapahit.</p>
@@ -159,14 +92,15 @@
           </div>
 
           <div class="registration-field registration-field--full">
-            <button class="px-space-md py-space-sm rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold" id="registration-submit" type="button">Kirim Minat Pendaftaran</button>
+            <button class="registration-submit px-space-md py-space-sm rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold" id="registration-submit" type="submit">Kirim Minat Pendaftaran</button>
             <p class="registration-status font-body-sm text-body-sm text-on-surface-variant mt-space-sm" id="form-status" role="status" aria-live="polite">Formulir siap dikirim.</p>
           </div>
         </form>
 
         <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-space-lg">Pengiriman formulir ini merupakan penyampaian minat pendaftaran. Informasi mengenai persyaratan, jadwal, dan proses penerimaan akan dikonfirmasi oleh pihak Akademi Pariwisata Majapahit.</p>
+        </div>
 
-        <aside class="registration-contact-card mt-space-xl" aria-labelledby="registration-contact-title">
+        <aside class="registration-contact-card" aria-labelledby="registration-contact-title">
           <figure class="illustration-frame">
             <img src="assets/ilustrasi-pendaftaran.jpg" alt="Ilustrasi diskusi dan pendampingan pendidikan" loading="lazy" decoding="async">
             <figcaption class="absolute bottom-3 left-3 px-3 py-1 rounded bg-surface/90 font-label-sm text-label-sm text-primary-container">Ilustrasi diskusi pendidikan (Unsplash)</figcaption>
@@ -230,7 +164,9 @@
         });
       });
 
-      submitButton.addEventListener("click", async () => {
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
         if (isSubmitting) return;
 
         const isValid = form.reportValidity();
