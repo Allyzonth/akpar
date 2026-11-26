@@ -44,9 +44,6 @@
       "aria-label",
       isOpen ? "Tutup menu navigasi" : "Buka menu navigasi"
     );
-    menuToggle.querySelector(".material-symbols-outlined").textContent = isOpen
-      ? "close"
-      : "menu";
 
     if (!isOpen) {
       closeDropdowns();

@@ -2009,6 +2009,30 @@ a[aria-disabled="true"] {
   cursor: not-allowed;
 }
 
+/* Inline SVG icons (replaces Material Symbols) */
+:where(.icon) {
+  font-size: 1.5rem;
+}
+
+.icon {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  vertical-align: middle;
+  color: currentColor;
+}
+
+.icon > svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
 .site-header-inner {
   position: relative;
 }
@@ -2032,7 +2056,7 @@ a[aria-disabled="true"] {
   display: flex;
 }
 
-.nav-dropdown.is-open > button .material-symbols-outlined {
+.nav-dropdown.is-open > button .icon {
   transform: rotate(180deg);
 }
 
@@ -2150,8 +2174,20 @@ button:focus-visible {
     color: var(--color-primary);
   }
 
-  .mobile-menu-toggle .material-symbols-outlined {
+  .mobile-menu-toggle .icon {
     font-size: 1.5rem;
+  }
+
+  .mobile-menu-toggle .menu-icon--close {
+    display: none;
+  }
+
+  .mobile-menu-toggle[aria-expanded="true"] .menu-icon--open {
+    display: none;
+  }
+
+  .mobile-menu-toggle[aria-expanded="true"] .menu-icon--close {
+    display: inline-flex;
   }
 
   .mobile-registration {
@@ -2202,8 +2238,9 @@ button:focus-visible {
   color: #ffe3a3;
 }
 
-.site-footer-contact .material-symbols-outlined {
+.site-footer-contact .icon {
   flex: 0 0 1.25rem;
+  height: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
@@ -2220,8 +2257,9 @@ button:focus-visible {
   transition: color 160ms ease, background-color 160ms ease;
 }
 
-.contact-link .material-symbols-outlined {
+.contact-link .icon {
   flex: 0 0 1.25rem;
+  height: 1.5rem;
   color: var(--color-primary);
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -2606,7 +2644,7 @@ button:focus-visible {
   box-shadow: var(--shadow-elevated);
 }
 
-.home-page .home-quick-card > .material-symbols-outlined:first-child {
+.home-page .home-quick-card > .icon:first-child {
   flex: 0 0 auto;
   color: #8e5900;
   font-size: 1.5rem;
@@ -2668,7 +2706,7 @@ button:focus-visible {
   background-color: #47175e;
 }
 
-.home-page .back-to-top .material-symbols-outlined {
+.home-page .back-to-top .icon {
   font-size: 1.125rem;
 }
 
@@ -3080,7 +3118,7 @@ button:focus-visible {
   box-shadow: var(--shadow-elevated);
 }
 
-.profile-page .profile-program-card > .material-symbols-outlined {
+.profile-page .profile-program-card > .icon {
   display: grid;
   width: 3rem;
   height: 3rem;
@@ -3163,7 +3201,7 @@ button:focus-visible {
   background-color: #47175e;
 }
 
-.profile-page .profile-back-to-top .material-symbols-outlined {
+.profile-page .profile-back-to-top .icon {
   font-size: 1.125rem;
 }
 
@@ -3430,7 +3468,7 @@ button:focus-visible {
   background-color: #47175e;
 }
 
-.program-page .program-back-to-top .material-symbols-outlined {
+.program-page .program-back-to-top .icon {
   font-size: 1.125rem;
 }
 
@@ -3599,7 +3637,7 @@ button:focus-visible {
   gap: 1rem;
 }
 
-.program-page .program-list-cta > div > .material-symbols-outlined {
+.program-page .program-list-cta > div > .icon {
   display: grid;
   width: 3rem;
   height: 3rem;
@@ -3620,23 +3658,7 @@ button:focus-visible {
 }
 
 .program-page .program-action-button {
-  display: inline-flex;
-  min-height: 2.75rem;
   flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  border-radius: var(--radius-sm);
-  background-color: #351047;
-  color: #fffdf8;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.program-page .program-action-button:hover {
-  background-color: #47175e;
 }
 
 .program-page .program-detail-intro {
@@ -4160,41 +4182,57 @@ button:focus-visible {
   margin-top: 2rem;
 }
 
-.news-page .news-action-link {
+/* --------------------------------------------------------------------------
+   Shared action buttons — pola visual diambil dari tombol di berita.html.
+   -------------------------------------------------------------------------- */
+.akpar-button {
+  border: 1px solid transparent;
+  border-radius: 0.625rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.akpar-button--standard {
   display: inline-flex;
   min-height: 2.875rem;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem 1rem;
-  border: 1px solid transparent;
-  border-radius: 0.625rem;
   font-size: 0.875rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
-.news-page .news-action-link--primary {
+.akpar-button.akpar-button--primary {
   background-color: #351047;
   color: #fffdf8;
 }
 
-.news-page .news-action-link--primary:hover {
+.akpar-button.akpar-button--primary:hover {
   background-color: #47175e;
 }
 
-.news-page .news-action-link--secondary {
+.akpar-button.akpar-button--secondary {
   border-color: rgb(53 16 71 / 0.2);
   background-color: #fffdf8;
   color: #351047;
 }
 
-.news-page .news-action-link--secondary:hover {
+.akpar-button.akpar-button--secondary:hover {
   border-color: #f6a51a;
   background-color: #f3ede4;
 }
 
+.akpar-button.akpar-button--accent {
+  background-color: #f6a51a;
+  color: #351047;
+}
+
+.akpar-button.akpar-button--accent:hover:not(:disabled) {
+  background-color: #e99a0e;
+}
+
+.akpar-button:focus-visible,
 .news-page .news-action-link:focus-visible,
 .admission-page .registration-submit:focus-visible {
   outline: 3px solid #f6a51a;
@@ -4329,7 +4367,7 @@ button:focus-visible {
   color: #351047;
 }
 
-.admission-page .registration-contact-details .contact-link .material-symbols-outlined {
+.admission-page .registration-contact-details .contact-link .icon {
   color: #8e5900;
 }
 
@@ -4448,5 +4486,325 @@ button:focus-visible {
   .admission-page .primary-navigation {
     right: 0.5rem;
     width: calc(100vw - 1rem);
+  }
+}
+
+/* Tahap 1 — alur pendaftaran enam langkah (khusus halaman pendaftaran) */
+.admission-page .admission-steps-header p {
+  max-width: 48rem;
+}
+
+.admission-page .admission-steps-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.admission-page .admission-step {
+  position: relative;
+  min-width: 0;
+}
+
+.admission-page .admission-step::before {
+  position: absolute;
+  top: 3.25rem;
+  bottom: -1.25rem;
+  left: 2.25rem;
+  width: 1px;
+  background: rgb(246 165 26 / 0.4);
+  content: "";
+}
+
+.admission-page .admission-step:last-child::before {
+  display: none;
+}
+
+.admission-page .admission-step-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  min-width: 0;
+  height: 100%;
+  padding: 1.25rem 1.25rem 1.25rem 3.75rem;
+  border: 1px solid rgb(53 16 71 / 0.1);
+  border-radius: 0.75rem;
+  background: #fffdf8;
+  box-shadow: 0 4px 20px -2px rgba(53, 16, 71, 0.04), 0 2px 6px -1px rgba(39, 35, 43, 0.03);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.admission-page .admission-step-link:hover {
+  border-color: rgb(246 165 26 / 0.6);
+  transform: translateY(-2px);
+}
+
+.admission-page .admission-step-link:focus-visible,
+.admission-page .admission-detail-back:focus-visible {
+  outline: 3px solid #f6a51a;
+  outline-offset: 3px;
+}
+
+.admission-page .admission-step-number,
+.admission-page .admission-detail-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgb(246 165 26 / 0.55);
+  border-radius: 9999px;
+  background: rgb(246 165 26 / 0.12);
+  color: #8e5900;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.admission-page .admission-step-number {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+
+.admission-page .admission-step-icon {
+  display: inline-flex;
+  color: #351047;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.admission-page .admission-step-title,
+.admission-page .admission-detail-title {
+  font-family: var(--font-display);
+  color: #351047;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.admission-page .admission-step-title {
+  font-size: 1.0625rem;
+}
+
+.admission-page .admission-step-desc {
+  color: #4c444e;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.admission-page .admission-step-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: auto;
+  color: #8e5900;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.admission-page [id^="langkah-"] {
+  scroll-margin-top: 6.5rem;
+}
+
+.admission-page .admission-details-header h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.admission-page .admission-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1.25rem;
+}
+
+.admission-page .admission-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid rgb(53 16 71 / 0.1);
+  border-radius: 0.75rem;
+  background: #fffdf8;
+  box-shadow: 0 4px 20px -2px rgba(53, 16, 71, 0.04), 0 2px 6px -1px rgba(39, 35, 43, 0.03);
+}
+
+.admission-page .admission-detail-title {
+  font-size: 1.125rem;
+}
+
+.admission-page .admission-detail-desc {
+  margin: 0;
+  color: #4c444e;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.admission-page .admission-detail-note {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem 0.625rem;
+  border: 1px solid rgb(246 165 26 / 0.35);
+  border-radius: 9999px;
+  background: rgb(246 165 26 / 0.12);
+  color: #8e5900;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.admission-page .admission-detail-list {
+  margin: 0;
+  padding-left: 1.125rem;
+  color: #4c444e;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.admission-page .admission-detail-list li + li {
+  margin-top: 0.375rem;
+}
+
+.admission-page .admission-detail-download,
+.admission-page .admission-detail-wa {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  text-decoration: none;
+}
+
+.admission-page .admission-detail-download svg,
+.admission-page .admission-detail-wa img {
+  width: 1em;
+  height: 1em;
+  flex: none;
+}
+
+.admission-page .admission-detail-back {
+  align-self: flex-start;
+  margin-top: auto;
+  color: #351047;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.admission-page .registration-next-step {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border: 1px solid rgb(246 165 26 / 0.4);
+  border-radius: 0.5rem;
+  background: rgb(246 165 26 / 0.1);
+}
+
+.admission-page .registration-next-step[hidden] {
+  display: none;
+}
+
+.admission-page .registration-next-step-title {
+  font-family: var(--font-display);
+  color: #351047;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.admission-page .registration-next-step-desc,
+.admission-page .registration-next-step-note {
+  margin: 0;
+  color: #4c444e;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.admission-page .registration-next-step-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.admission-page .registration-next-step-actions > a {
+  max-width: 100%;
+  text-align: center;
+}
+
+.admission-page .registration-next-step-list {
+  margin: 0;
+  padding-left: 1.125rem;
+  color: #4c444e;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.admission-page .registration-next-step-list li + li {
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .admission-page .admission-steps-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admission-page .admission-step::before {
+    display: none;
+  }
+
+  .admission-page .admission-step-link {
+    padding: 1.25rem;
+  }
+
+  .admission-page .admission-step-number {
+    position: static;
+    margin-bottom: 0.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .admission-page .admission-steps-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .admission-page .admission-steps-list {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0.875rem;
+  }
+
+  .admission-page .admission-step-link {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .admission-page .admission-step-icon {
+    font-size: 1.25rem;
+  }
+
+  .admission-page .admission-step-title {
+    font-size: 0.9375rem;
+  }
+
+  .admission-page .admission-step-desc {
+    font-size: 0.75rem;
+    line-height: 1.5;
   }
 }

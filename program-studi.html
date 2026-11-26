@@ -7,7 +7,6 @@
   <meta name="description" content="Daftar dua program studi resmi Akademi Pariwisata Majapahit: Usaha Perjalanan Wisata dan Perhotelan.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <script src="script.js" defer></script>
@@ -16,14 +15,14 @@
   <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_2px_12px_rgba(53,16,71,0.06)] border-b border-outline-variant/30">
     <div class="site-header-inner h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between">
       <a class="program-brand flex items-center gap-space-sm group text-left" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda">
-        <span class="p-1 bg-surface-container-lowest rounded shadow-sm flex items-center justify-center shrink-0"><img alt="" class="w-10 h-10 object-contain shrink-0" src="assets/logo.png"></span>
+        <span class="p-1 bg-surface-container-lowest rounded shadow-sm flex items-center justify-center shrink-0"><img alt="" class="w-10 h-10 object-contain shrink-0" src="assets/logo.png" width="447" height="447"></span>
         <span class="flex flex-col"><span class="program-brand-name font-headline-sm text-headline-sm font-bold text-primary-container tracking-wider leading-none group-hover:text-secondary transition-colors">AKADEMI PARIWISATA MAJAPAHIT</span><span class="program-brand-tagline font-label-md text-label-md tracking-widest text-on-surface-variant font-medium mt-0.5 uppercase">Pendidikan Pariwisata &amp; Hospitality</span></span>
       </a>
       <nav id="primary-navigation" class="primary-navigation items-center gap-space-md" aria-label="Navigasi utama">
         <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="index.html">Beranda</a>
         <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="profil.html">Profil</a>
         <div class="relative group nav-dropdown py-2">
-          <button type="button" class="font-label-lg text-label-lg text-secondary font-bold flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-controls="program-menu">Program Studi<span class="material-symbols-outlined text-[18px] transition-transform duration-200" aria-hidden="true">expand_more</span></button>
+          <button type="button" class="font-label-lg text-label-lg text-secondary font-bold flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-controls="program-menu">Program Studi<span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg></span></button>
           <div id="program-menu" class="nav-dropdown-panel absolute left-0 top-full flex-col bg-surface-container-lowest py-space-sm px-space-xs shadow-[0_12px_32px_-4px_rgba(53,16,71,0.12)] rounded-lg min-w-[250px] border border-outline-variant/20 z-50" aria-hidden="true">
             <a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="program-studi.html" aria-current="page">Semua Program Studi</a>
             <a class="px-space-md py-2 text-on-surface-variant hover:bg-surface-container-low hover:text-primary rounded font-label-md text-label-md transition-colors" href="prodi-usaha-perjalanan-wisata.html">Usaha Perjalanan Wisata</a>
@@ -31,10 +30,12 @@
           </div>
         </div>
         <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="berita.html">Berita</a>
-        <a class="desktop-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary transition-colors" href="pendaftaran.html">Pendaftaran</a>
-        <a class="mobile-registration px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold" href="pendaftaran.html">Pendaftaran</a>
+        <!-- TODO: ganti href="#" dengan URL halaman Jurnal -->
+        <a class="transition-colors py-2 text-on-surface-variant hover:text-primary" href="#">Jurnal</a>
+        <a class="desktop-registration akpar-button akpar-button--accent px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold hover:bg-secondary transition-colors" href="pendaftaran.html">Pendaftaran</a>
+        <a class="mobile-registration akpar-button akpar-button--accent px-space-md py-2.5 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold" href="pendaftaran.html">Pendaftaran</a>
       </nav>
-      <button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation"><span class="material-symbols-outlined" aria-hidden="true">menu</span></button>
+      <button class="mobile-menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-navigation"><span class="icon menu-icon menu-icon--open" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span><span class="icon menu-icon menu-icon--close" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span></button>
     </div>
   </header>
 
@@ -44,7 +45,7 @@
         <nav class="font-label-md text-label-md text-on-surface-variant mb-space-lg" aria-label="Breadcrumb">
           <ol class="flex flex-wrap items-center gap-2">
             <li><a class="hover:text-primary transition-colors" href="index.html">Beranda</a></li>
-            <li aria-hidden="true"><span class="material-symbols-outlined text-[16px] align-middle">chevron_right</span></li>
+            <li aria-hidden="true"><span class=""><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></span></li>
             <li class="font-semibold text-primary-container" aria-current="page">Program Studi</li>
           </ol>
         </nav>
@@ -65,40 +66,38 @@
         <div class="program-list-grid grid grid-cols-1 md:grid-cols-2 gap-space-lg">
           <article class="program-study-card program-list-card program-list-card--travel rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex flex-col items-start overflow-hidden">
             <figure class="illustration-frame aspect-[16/10] w-full">
-              <img src="assets/ilustrasi-perjalanan-card.jpg" alt="Ilustrasi perjalanan wisata dengan peta dan perlengkapan perjalanan" loading="lazy" decoding="async">
-              <figcaption class="absolute bottom-3 left-3 px-3 py-1 rounded bg-surface/90 font-label-sm text-label-sm text-primary-container">Ilustrasi perjalanan (Unsplash)</figcaption>
+              <img src="assets/akpar10.JPG" alt="Ilustrasi perjalanan wisata dengan peta dan perlengkapan perjalanan" loading="lazy" decoding="async" width="400" height="266">
             </figure>
             <div class="program-list-card-body p-space-lg lg:p-space-xl flex flex-col items-start">
-              <span class="program-list-icon material-symbols-outlined text-[36px] text-secondary" aria-hidden="true">travel_explore</span>
+              <span class="program-list-icon" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM691-309q29-29 29-71t-29-71q-29-29-71-29t-71 29q-29 29-29 71t29 71q29 29 71 29t71-29Z"/></svg></span>
               <h2 class="font-headline-sm text-headline-sm font-bold text-primary-container mt-space-md">Usaha Perjalanan Wisata</h2>
               <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">Informasi Program Studi Usaha Perjalanan Wisata.</p>
-              <a class="mt-space-lg inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary transition-colors" href="prodi-usaha-perjalanan-wisata.html">Lihat Detail <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span></a>
+              <a class="mt-space-lg inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary transition-colors" href="prodi-usaha-perjalanan-wisata.html">Lihat Detail <span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></span></a>
             </div>
           </article>
           <article class="program-study-card program-list-card program-list-card--hotel rounded-xl bg-surface-container-lowest shadow-card border border-outline-variant/20 flex flex-col items-start overflow-hidden">
             <figure class="illustration-frame aspect-[16/10] w-full">
-              <img src="assets/ilustrasi-perhotelan-card.jpg" alt="Ilustrasi suasana hotel dan hospitality" loading="lazy" decoding="async">
-              <figcaption class="absolute bottom-3 left-3 px-3 py-1 rounded bg-surface/90 font-label-sm text-label-sm text-primary-container">Ilustrasi perhotelan (Unsplash)</figcaption>
+              <img src="assets/akpar11.jpg" alt="Ilustrasi suasana hotel dan hospitality" loading="lazy" decoding="async" width="1600" height="776">
             </figure>
             <div class="program-list-card-body p-space-lg lg:p-space-xl flex flex-col items-start">
-              <span class="program-list-icon material-symbols-outlined text-[36px] text-secondary" aria-hidden="true">hotel</span>
+              <span class="program-list-icon" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M40-200v-600h80v400h320v-320h320q66 0 113 47t47 113v360h-80v-120H120v120H40Zm155-275q-35-35-35-85t35-85q35-35 85-35t85 35q35 35 35 85t-35 85q-35 35-85 35t-85-35Zm325 75h320v-160q0-33-23.5-56.5T760-640H520v240ZM308.5-531.5Q320-543 320-560t-11.5-28.5Q297-600 280-600t-28.5 11.5Q240-577 240-560t11.5 28.5Q263-520 280-520t28.5-11.5ZM280-560Zm240-80v240-240Z"/></svg></span>
               <h2 class="font-headline-sm text-headline-sm font-bold text-primary-container mt-space-md">Perhotelan</h2>
               <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-space-sm">Informasi Program Studi Perhotelan.</p>
-              <a class="mt-space-lg inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary transition-colors" href="prodi-perhotelan.html">Lihat Detail <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_forward</span></a>
+              <a class="mt-space-lg inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary transition-colors" href="prodi-perhotelan.html">Lihat Detail <span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></span></a>
             </div>
           </article>
         </div>
         <aside class="program-list-cta">
           <div>
-            <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            <span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/></svg></span>
             <div>
               <h2 class="font-headline-sm text-headline-sm font-bold text-primary-container">Informasi Pendaftaran</h2>
               <p class="font-body-md text-body-md text-on-surface-variant">Sampaikan minat pendaftaran melalui halaman pendaftaran.</p>
             </div>
           </div>
-          <a class="program-action-button" href="pendaftaran.html">Informasi Pendaftaran <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          <a class="program-action-button akpar-button akpar-button--standard akpar-button--primary" href="pendaftaran.html">Informasi Pendaftaran <span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></span></a>
         </aside>
-        <a class="program-return-link mt-space-xl inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary transition-colors" href="index.html"><span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_back</span>Kembali ke Beranda</a>
+        <a class="program-return-link mt-space-xl inline-flex items-center gap-2 font-label-md text-label-md font-bold text-primary hover:text-secondary transition-colors" href="index.html"><span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></span>Kembali ke Beranda</a>
       </div>
     </section>
   </main>
@@ -106,13 +105,13 @@
   <footer class="program-footer w-full bg-primary-container text-surface-container-lowest border-t border-secondary/30 pt-space-xl pb-space-lg">
     <div class="max-w-7xl mx-auto px-gutter">
       <div class="site-footer-grid">
-        <div><a class="flex items-center gap-space-sm mb-space-sm" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda"><span class="p-1.5 bg-surface-container-lowest rounded shadow shrink-0"><img alt="" class="w-10 h-10 object-contain" src="assets/logo.png"></span><span class="font-headline-sm text-headline-sm font-bold text-surface tracking-wide">AKADEMI PARIWISATA MAJAPAHIT</span></a><p class="font-body-sm text-body-sm text-surface-variant/90 leading-relaxed">Akademi Pariwisata Majapahit menyelenggarakan dua program studi: Usaha Perjalanan Wisata dan Perhotelan.</p></div>
+        <div><a class="flex items-center gap-space-sm mb-space-sm" href="index.html" aria-label="Akademi Pariwisata Majapahit — Beranda"><span class="p-1.5 bg-surface-container-lowest rounded shadow shrink-0"><img alt="" class="w-10 h-10 object-contain" src="assets/logo.png" width="447" height="447" loading="lazy" decoding="async"></span><span class="font-headline-sm text-headline-sm font-bold text-surface tracking-wide">AKADEMI PARIWISATA MAJAPAHIT</span></a><p class="font-body-sm text-body-sm text-surface-variant/90 leading-relaxed">Akademi Pariwisata Majapahit menyelenggarakan dua program studi: Usaha Perjalanan Wisata dan Perhotelan.</p></div>
         <nav class="site-footer-links" aria-label="Navigasi footer"><h2 class="font-label-lg text-label-lg font-bold text-secondary-fixed uppercase tracking-wider mb-2">Navigasi</h2><a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-secondary-fixed py-1" href="index.html">Beranda</a><a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-secondary-fixed py-1" href="profil.html">Profil</a><a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-secondary-fixed py-1" href="program-studi.html">Program Studi</a><a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-secondary-fixed py-1" href="berita.html">Berita</a><a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-secondary-fixed py-1" href="pendaftaran.html">Pendaftaran</a></nav>
         <nav class="site-footer-links" aria-label="Program studi"><h2 class="font-label-lg text-label-lg font-bold text-secondary-fixed uppercase tracking-wider mb-2">Program Studi</h2><a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-secondary-fixed py-1" href="prodi-usaha-perjalanan-wisata.html">Usaha Perjalanan Wisata</a><a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-secondary-fixed py-1" href="prodi-perhotelan.html">Perhotelan</a></nav>
-        <address class="site-footer-contact"><h2 class="font-label-lg text-label-lg font-bold text-secondary-fixed uppercase tracking-wider mb-2">Kontak</h2><a class="font-body-sm text-body-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.%20Raya%20Jemursari%20244%2C%20Surabaya" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined" aria-hidden="true">location_on</span><span>Jl. Raya Jemursari 244, Surabaya</span></a><a class="font-body-sm text-body-sm" href="tel:+62318433225"><span class="material-symbols-outlined" aria-hidden="true">call</span><span>(031) 8433225</span></a><a class="font-body-sm text-body-sm" href="https://wa.me/6281232539310" target="_blank" rel="noopener noreferrer"><img class="contact-icon contact-icon--whatsapp" src="assets/whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp Marketing 1<br>+62 812-3253-9310</span></a><a class="font-body-sm text-body-sm" href="https://wa.me/6281330350822" target="_blank" rel="noopener noreferrer"><img class="contact-icon contact-icon--whatsapp" src="assets/whatsapp.svg" alt="" aria-hidden="true"><span>WhatsApp Marketing 2<br>+62 813-3035-0822</span></a><a class="font-body-sm text-body-sm" href="mailto:baa.akparmajapahit@gmail.com"><span class="material-symbols-outlined" aria-hidden="true">mail</span><span>baa.akparmajapahit@gmail.com</span></a></address>
+        <address class="site-footer-contact"><h2 class="font-label-lg text-label-lg font-bold text-secondary-fixed uppercase tracking-wider mb-2">Kontak</h2><a class="font-body-sm text-body-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.%20Raya%20Jemursari%20244%2C%20Surabaya" target="_blank" rel="noopener noreferrer"><span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></span><span>Jl. Raya Jemursari 244, Surabaya</span></a><a class="font-body-sm text-body-sm" href="tel:+62318433225"><span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></span><span>(031) 8433225</span></a><a class="font-body-sm text-body-sm" href="https://wa.me/6281232539310" target="_blank" rel="noopener noreferrer"><img class="contact-icon contact-icon--whatsapp" src="assets/whatsapp.svg" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async"><span>WhatsApp Marketing 1<br>+62 812-3253-9310</span></a><a class="font-body-sm text-body-sm" href="https://wa.me/6281330350822" target="_blank" rel="noopener noreferrer"><img class="contact-icon contact-icon--whatsapp" src="assets/whatsapp.svg" alt="" aria-hidden="true" width="24" height="24" loading="lazy" decoding="async"><span>WhatsApp Marketing 2<br>+62 813-3035-0822</span></a><a class="font-body-sm text-body-sm" href="mailto:baa.akparmajapahit@gmail.com"><span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></span><span>baa.akparmajapahit@gmail.com</span></a></address>
       </div>
       <p class="pt-space-md text-surface-variant/70 font-body-sm text-body-sm">&copy; <span data-current-year>2026</span> Akademi Pariwisata Majapahit.</p>
-      <a class="program-back-to-top" href="#top" aria-label="Kembali ke atas"><span class="material-symbols-outlined" aria-hidden="true">arrow_upward</span><span>Kembali ke atas</span></a>
+      <a class="program-back-to-top" href="#top" aria-label="Kembali ke atas"><span class="" aria-hidden="true"><svg viewBox="0 -960 960 960" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></span><span>Kembali ke atas</span></a>
     </div>
   </footer>
 </body>
